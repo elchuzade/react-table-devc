@@ -1,9 +1,103 @@
-/* add css module styles here (optional) */
+table {
+  table-layout: auto;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+tr:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.table {
+  padding: 1rem;
+}
+
+.table-header {
+  position: relative;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.table-header-left {
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+.table-header-right {
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.table-header-title {
+  margin: 0;
+  color: darkblue;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.table-header-input {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0 0 3px black;
+}
+
+.table-header-input:hover {
+  box-shadow: 0 0 4px black;
+}
+
+.table-body {
+  margin: 0.5rem;
+}
+
+.table-column {
+  border: 1px solid lightgrey;
+  height: 2.5rem;
+}
+
+.table-column-title-left {
+  float: left;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.table-column-title-right {
+  float: right;
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+.table-column-title-button {
+  background: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  box-shadow: 0 0 3px black;
+}
+
+.table-column-title-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 4px black;
+}
+
+.table-column-title-button:focus {
+  cursor: pointer;
+  outline: none;
+}
+
+.table-column-title-button:active {
+  cursor: pointer;
+  box-shadow: 0 0 2px black;
+}
+
+.table-item {
+  padding: 0.5rem;
 }
