@@ -1,6 +1,6 @@
 # In this tutorial we will be building a basic react table library for npm
 ##### The result can be found on this [Demo](https://elchuzade.com)
-##### or installed on this [GitHub](https://github.com/elchuzade/react-simple-table-devc/tree/master)
+##### or installed on this [GitHub](https://github.com/elchuzade/react-table-devc/tree/master)
 #
 #
 ![Library Image](https://elasticbeanstalk-eu-central-1-931642419815.s3.eu-central-1.amazonaws.com/DevC+(do+not+delete)/devc-table.png)
@@ -22,7 +22,7 @@ The table you see above includes a title, search input that filters data, sort b
 Before jumping into coding we shave to complete all the setups.
 - Setting up **NPM** account. In order to be able to publish your library to npm, you first need to create an account. You can do that from [npm's website](https://www.npmjs.com/). If you already have one, just login.
 - Creating a **GitHub** account. In case if you don't have one, go to [GitHub](https://github.com/) and signup.
-- Coming up with a unique name for your library. To check if the name already exists type it into the search bar on [npm's website](https://www.npmjs.com/). In this tutorial we will name our library **react-simple-table-devc**
+- Coming up with a unique name for your library. To check if the name already exists type it into the search bar on [npm's website](https://www.npmjs.com/). In this tutorial we will name our library **react-table-devc**
 - Installing **create-react-library** package creator. This is the tool that does all the setups for you. ```npm install -g create-react-library```
 - Creating a GitHub repository with the library name. Instructions can be found [here.](https://docs.github.com/en/enterprise/2.15/user/articles/create-a-repo). Make sure the repository is **public**.
 - Creating a template for the library. Run in terminal ```npx create-react-library```
@@ -443,8 +443,8 @@ Open ***example/src*** folder and replace everything inside ***App.tsx*** with t
 ```
 import React, { useState } from 'react'
 
-import DeveloperCirclesTable from 'react-simple-table-devc'
-import 'react-simple-table-devc/dist/index.css'
+import DeveloperCirclesTable from 'react-table-devc'
+import 'react-table-devc/dist/index.css'
 
 const users = [...]
 
@@ -493,11 +493,11 @@ export default App
 ```
 Make sure to replace these two liines of imports at the top.
 ```
-import DeveloperCirclesTable from 'react-simple-table-devc'
-import 'react-simple-table-devc/dist/index.css'
+import DeveloperCirclesTable from 'react-table-devc'
+import 'react-table-devc/dist/index.css'
 ```
 - ```DeveloperCirclesTable``` should be replaced with the name that you gave to the component in the ***index.tsx*** of root ***src*** folder where you have built the table.
-- ```react-simple-table-devc``` should be replaced with the name of your library
+- ```react-table-devc``` should be replaced with the name of your library
 #
 Open the [JSON Placeholder](https://jsonplaceholder.typicode.com/users) website. And copy all the data you see in the browser. This is the dummy data about users. Paste it into the ```const users = [...]``` array at the top of the file instead of the 3 dots array.  Save the changes and head to the browser. You should see the table populated with the dummy data about users. Make sure ***users*** becomes an ***array*** of objects, not ***array*** of ***array*** of objects.
 #
