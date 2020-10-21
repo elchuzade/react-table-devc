@@ -1,10 +1,9 @@
 # In this tutorial we will be building a basic react table library for npm
 ##### The result can be found on this [Demo](https://elchuzade.com)
 ##### or installed on this [GitHub](https://github.com/elchuzade/react-table-devc/tree/master)
-#
-#
+
 ![Library Image](https://elasticbeanstalk-eu-central-1-931642419815.s3.eu-central-1.amazonaws.com/DevC+(do+not+delete)/devc-table.png)
-#
+
 The table you see above includes a title, search input that filters data, sort buttons that sort data, column titles and rows of data.
 ### Prerequisite:
 ##### Knowledge:
@@ -61,15 +60,15 @@ This will watch the ***example*** folder for changes and update the browser when
     cd example // If you have opened a terminal in the library's root folder
     npm start
     ```
-#
+
 > All the files and all the code that the library contains will be added to the **src** folder in the **root** of the library.
 The use case of the library will be added to the **src** folder inside the **example** folder.
-#
+
 > By now your browser should be opened with **localhost:3000** with the welcome text from **create-react-library** developers.
-#
+
 #### Step 1.
 Create a ***types.d.ts*** file. This file will be holding global interfaces and types. Add the following interfaces and types into this file.
-#
+
 ```
 interface TableProps {
   id?: string;
@@ -140,15 +139,15 @@ type OnSortButton = () => any
 
 type ColumnValue = (row: object) => string
 ```
-#
+
 > **Note:** Some fields are **required** and some are **optional**.
-#
+
 - ***columns*** and ***rows*** are required fields in the **TableProps**, since there can be no table without these fields.
 - ***columnKey*** is required field in the **TableColumn** and it must be unique. This one will be used by **sort** and **filter** functions, since we need to refer to the specific column by its unique key.
-#
+
 #### Step 2.
 Change styles in the ***styles.module.css*** file with the code below. Here are some basic styles to make your table look more exciting.
-#
+
 ```
 table {
   table-layout: auto;
@@ -254,12 +253,12 @@ tr:nth-child(even) {
   padding: 0.5rem;
 }
 ```
-#
+
 > **Note:** Classes are written in a **SASS** style, this is done on purpose in case you want to make a bigger library and use **SASS** compiler. In that case you would have to install **node-sass** compiler and add it into the dependencies.
-#
+
 #### Step 3.
 Add a new file ***TableColumnTitle.tsx*** to the ***src*** folder. This is a column title component, separated from the table to make the overall code cleaner and easier to read.
-#
+
 ```
 import React from 'react'
 import styles from './styles.module.css'
@@ -304,9 +303,9 @@ const TableColumnTitle = ({
 
 export default TableColumnTitle
 ```
-#
+
 > **Note:** Left and Right arrows can be replaced by your favorite icons that represent **Ascending** and **Descending** sorting functions.
-#
+
 #### Step 4.
 Replace the code inside ***index.tsx*** file with the code below.
 - Here we will import and use previously created ***TableColumnTitle*** component.
@@ -315,7 +314,7 @@ Replace the code inside ***index.tsx*** file with the code below.
 - **Filter** function will filter all data rows based on **searchFields** array provided by the user of the library.
 - We will hold a copy of rows in the table's local state to be able to sort and filter without affecting the actual data.
 - Also functions such as **onSortAsc**, **onSortDes** and **onChangeSearch** can be provided by the library user. These will be executed after **sortData** and **filterData** to make sure that the **sort** and **filter** works as intended and the user gets his functions run as well.
-#
+
 ```
 import React, { useState } from 'react'
 import TableColumnTitle from './TableColumnTitle'
@@ -429,16 +428,16 @@ const DeveloperCirclesTable = ({
 
 export default DeveloperCirclesTable
 ```
-#
+
 > **Note:** Here we are expecting table fields to be **strings**, but we are not **throwing  exceptions**, since this library is for demonstration purposes. When you build a bigger one, it is always better to work your exceptions and errors in a clear to understand manner.
-#
-### Congratualtions!
+
+### Almost done!
 At this point you have completed development of your very own library.
 All that's left is to import it into ***example*** folder for testing in the browser and finally to deploy it to ***npm***.
 
 #### Testing.
 To be able to test our table we will need some data. Thanks to JSON-Placeholder we can access bunch of data created for development purposes.
-#
+
 Open ***example/src*** folder and replace everything inside ***App.tsx*** with the following code.
 ```
 import React, { useState } from 'react'
@@ -498,15 +497,14 @@ import 'react-table-devc/dist/index.css'
 ```
 - ```DeveloperCirclesTable``` should be replaced with the name that you gave to the component in the ***index.tsx*** of root ***src*** folder where you have built the table.
 - ```react-table-devc``` should be replaced with the name of your library
-#
+
 Open the [JSON Placeholder](https://jsonplaceholder.typicode.com/users) website. And copy all the data you see in the browser. This is the dummy data about users. Paste it into the ```const users = [...]``` array at the top of the file instead of the 3 dots array.  Save the changes and head to the browser. You should see the table populated with the dummy data about users. Make sure ***users*** becomes an ***array*** of objects, not ***array*** of ***array*** of objects.
-#
+
 > **Note:** Here we are **NOT** passing all the props to the **DeveloperCirclesTable** component, since most of them were optional. In the **value** field of objects inside **columns** array we are passing a function that finds and returns the desired value from each row. Incase we want to hide **Sort Buttons** from the column title, we simply do not pass **onSortDes** and **onSortAsc**.
-#
+
 ##### Full code to this tutorial can be found on [GitHub]('https://github.com/elchuzade')
-#
-#
-#
+
+
 #### Last step! Publishing to NPM
 This part is perhaps the easiest of all. You need to login to npm, publish your library and deploy it on GitHub. To do all of that, open another terminal in the ***root*** of your library then follow the commands below.
 - To login to npm run: ```npm login```
@@ -515,8 +513,7 @@ You will be promted to type in your ***username*** and ***password*** for *npm* 
 - To deploy to GitHub add GitHub remote address and run deployment script:
 ```git remote add origin git@github.com:<github-username>/<repository-name>.git```
 ```npm run deploy```
-#
+
 # Congratulations! --- You did it.
 ### Now you are officially a part of open source community with your very own library.
 ##### Hope this inspires you to create even more and even better libraries and we, developers, use them in our projects.
-#
