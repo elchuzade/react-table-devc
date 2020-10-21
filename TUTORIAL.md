@@ -514,6 +514,6 @@ You will be promted to type in your ***username*** and ***password*** for *npm* 
 ```git remote add origin git@github.com:<github-username>/<repository-name>.git```
 ```npm run deploy```
 
-# Congratulations! --- You did it.
+# Congratulations! - You did it.
 ### Now you are officially a part of open source community with your very own library.
 ##### Hope this inspires you to create even more and even better libraries and we, developers, use them in our projects.
