@@ -15,12 +15,12 @@ npm install --save react-table-devc
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-table-devc'
+import DeveloperCirclesTable from 'react-table-devc'
 import 'react-table-devc/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <DeveloperCirclesTable />
   }
 }
 ```
