@@ -1,5 +1,5 @@
 # In this tutorial we will be building a basic react table library for npm
-##### The result can be found on this [Demo](https://elchuzade.com)
+##### The result can be found on this [Demo](https://elchuzade.github.io)
 ##### or installed on this [GitHub](https://github.com/elchuzade/react-table-devc/tree/master)
 
 ![Library Image](https://elasticbeanstalk-eu-central-1-931642419815.s3.eu-central-1.amazonaws.com/DevC+(do+not+delete)/devc-table.png)
