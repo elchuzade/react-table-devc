@@ -25,6 +25,31 @@ import 'react-table-devc/dist/index.css'
 const Example = () => {
   const [search, setSearch] = useState('')
   
+  // This data is taken and modified from JSON Placeholder users database https://jsonplaceholder.typicode.com/users
+  const users = [
+    {
+      "name": "Leanne Graham",
+      "email": "Sincere@april.biz",
+      "address": {
+        "street": "Kulas Light",
+      }
+    },
+    {
+      "name": "Ervin Howell",
+      "email": "Shanna@melissa.tv",
+      "address": {
+        "street": "Victor Plains",
+      }
+    },
+    {
+      "name": "Clementine Bauch",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "street": "Douglas Extension",
+      }
+    }
+  ]
+  
   render() {
     return <DeveloperCirclesTable
       title={{value: 'Table Title'}}
