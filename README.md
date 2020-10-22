@@ -92,7 +92,7 @@ export const Example
 | ***name*** | *optional* | *string* | Name of the html input element |
 | ***type*** | *optional* | *string* | Type of input field in the search bar, by default text |
 | ***value*** | *optional* | *string* | Value of the html input element |
-| ***searchFields*** | *optional* | *array of strings* | List of fields that will be searched when anything is typed in the search field, this must be unique keys  |for each column that will also be included in the column props
+| ***searchFields*** | *optional* | *array of strings* | List of fields that will be searched when anything is typed in the search field, these must be unique keys  |for each column that will also be included in the column props
 | ***onChangeSearch*** | *optional* | *function* | An onChange function of the input field. It will do the filter plus whatever is added to this prop |
 #
 
