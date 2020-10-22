@@ -12,7 +12,7 @@
 npm install --save react-table-devc
 ```
 
-## Usage Class-Based
+## Usage Hooks-Based
 
 ```tsx
 import React, { useState } from 'react'
