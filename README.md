@@ -1,8 +1,6 @@
 # react-table-devc
 
-
-
-### Live <a href='https://elchuzade.github.io' target='_blank'>Demo</a>
+### Live <a href="https://elchuzade.github.io" target="_blank">Demo</a>
 
 ### Check [TUTORIAL.md](https://github.com/elchuzade/react-table-devc/blob/master/TUTORIAL.md/?target=_blank) for instructions on how to build and publish a table like this from scratch.
 
