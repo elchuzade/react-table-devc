@@ -1,6 +1,8 @@
 # react-table-devc
 
-### Check TUTORIAL.md for instructions on how to build and publish a table like this from scratch.
+### Live [Demo](https://elchuzade.github.io/)
+
+### Check [TUTORIAL.md](https://github.com/elchuzade/react-table-devc/blob/master/TUTORIAL.md) for instructions on how to build and publish a table like this from scratch.
 
 > Made with create-react-library
 
