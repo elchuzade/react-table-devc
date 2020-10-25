@@ -1,6 +1,11 @@
 # Building a basic react table library for npm
 ### Overview
-In this tutorial we will be creating a basic react library, using **create-react-library** package. Our library will be represented as a table with sort and filter functionalities. We will then populate the table with data from Json Placeholder (free mock data source for developers) for testing purposes.
+In this tutorial we will be creating a basic react library, using **create-react-library** package. Our library will be represented as a table with sort and filter functionalities. We will then populate the table with data from Json Placeholder (free mock data source for developers) for testing purposes. The key concepts we will explore are:
+- Initialization of a react library
+- Typescript types and interfaces
+- Creation and import of styles
+- Creation and import of multiple components
+- Deployment of a library to npm
 
 ##### The result can be found on this [Demo](https://elchuzade.github.io)
 ##### or installed on this [GitHub](https://github.com/elchuzade/react-table-devc/tree/master)
@@ -438,6 +443,8 @@ export default DeveloperCirclesTable
 ### Almost done!
 At this point you have completed development of your very own library.
 All that's left is to import it into ***example*** folder for testing in the browser and finally to deploy it to ***npm***.
+
+> **Note:** If you have a browser opened with the port listeting to your app, you will see an error occuring on the page. This is absolutely fine and expected. This happens because we have updated the **DeveloperCirclesTable** file, which holds the library we are developing, but the **App.tsx** in **example** folder is still trying to import the default empty Component, so next we will be changing the **App.tsx** in **example** folder adding the proper imports of our library.
 
 #### Testing.
 To be able to test our table we will need some data. Thanks to JSON-Placeholder we can access bunch of data created for development purposes.
