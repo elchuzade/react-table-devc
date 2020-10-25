@@ -530,7 +530,7 @@ You will be promted to type in your ***username*** and ***password*** for *npm* 
 Your library should soon be available on the npm. You should receive an email about the package deployment status. Now if you create a new react app, you can easily import the component as we did in **example** folder **App.tsx** file.
 
 ### Further improvements
-If you liked the idea of craeting a table library, you can
+If you liked the idea of creating a table library, you can
 - add more functionality
 - improve styles
 - add responsive design
