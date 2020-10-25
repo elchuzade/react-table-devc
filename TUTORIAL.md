@@ -1,11 +1,15 @@
-# In this tutorial we will be building a basic react table library for npm
+# Building a basic react table library for npm
+### Overview
+In this tutorial we will be creating a basic react library, using **create-react-library** package. Our library will be represented as a table with sort and filter functionalities. We will then populate the table with data from Json Placeholder (free mock data source for developers) for testing purposes.
+
 ##### The result can be found on this [Demo](https://elchuzade.github.io)
 ##### or installed on this [GitHub](https://github.com/elchuzade/react-table-devc/tree/master)
 
+The image below shows how the table will look when imported from npm and populated with data.
 ![Library Image](https://elasticbeanstalk-eu-central-1-931642419815.s3.eu-central-1.amazonaws.com/DevC+(do+not+delete)/devc-table.png)
 
 The table you see above includes a title, search input that filters data, sort buttons that sort data, column titles and rows of data.
-### Prerequisite:
+### Requirements:
 ##### Knowledge:
 - ***ReactJS*** with concept of ***Hooks***
 - ***TypeScript***
@@ -490,7 +494,7 @@ const App = () => {
 
 export default App
 ```
-Make sure to replace these two liines of imports at the top.
+Make sure to replace these two lines of imports at the top.
 ```
 import DeveloperCirclesTable from 'react-table-devc'
 import 'react-table-devc/dist/index.css'
@@ -503,7 +507,7 @@ Open the [JSON Placeholder](https://jsonplaceholder.typicode.com/users) website.
 > **Note:** Here we are **NOT** passing all the props to the **DeveloperCirclesTable** component, since most of them were optional. In the **value** field of objects inside **columns** array we are passing a function that finds and returns the desired value from each row. Incase we want to hide **Sort Buttons** from the column title, we simply do not pass **onSortDes** and **onSortAsc**.
 
 ##### Full code to this tutorial can be found on [GitHub]('https://github.com/elchuzade')
-
+##### Working demo of the table can be found on this [Demo](https://elchuzade.github.io)
 
 #### Last step! Publishing to NPM
 This part is perhaps the easiest of all. You need to login to npm, publish your library and deploy it on GitHub. To do all of that, open another terminal in the ***root*** of your library then follow the commands below.
@@ -515,5 +519,8 @@ You will be promted to type in your ***username*** and ***password*** for *npm* 
 ```npm run deploy```
 
 # Congratulations! - You did it.
+
+Your library should soon be available on the npm. You should receive an email about the package deployment status. Now if you create a new react app, you can easily import the component as we did in **example** folder **App.tsx** file.
+
 ### Now you are officially a part of open source community with your very own library.
 ##### Hope this inspires you to create even more and even better libraries and we, developers, use them in our projects.
