@@ -540,5 +540,9 @@ If you liked the idea of creating a table library, you can
 - add tests
 to the table you have just created.
 
+## License
+
+MIT © [elchuzade](https://github.com/elchuzade)
+
 ### Now you are officially a part of open source community with your very own library.
 #### Hope this inspires you to create even more and even better libraries and we, developers, use them in our projects.
