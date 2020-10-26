@@ -444,7 +444,7 @@ export default DeveloperCirclesTable
 At this point you have completed development of your very own library.
 All that's left is to import it into ***example*** folder for testing in the browser and finally to deploy it to ***npm***.
 
-> **Note:** If you have a browser opened with the port listeting to your app, you will see an error occuring on the page. This is absolutely fine and expected. This happens because we have updated the **DeveloperCirclesTable** file, which holds the library we are developing, but the **App.tsx** in **example** folder is still trying to import the default empty Component, so next we will be changing the **App.tsx** in **example** folder adding the proper imports of our library.
+> **Note:** If you have a browser opened with the port listeting to your app, you will see an error occuring on the page. This is absolutely fine and expected. This happens because we have updated the **index.tsx** file, which holds the library we are developing, but the **App.tsx** in **example** folder is still trying to import the default empty Component, so next we will be changing the **App.tsx** in **example** folder adding the proper imports of our library.
 
 #### Testing.
 To be able to test our table we will need some data. Thanks to JSON-Placeholder we can access bunch of data created for development purposes.
