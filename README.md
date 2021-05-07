@@ -56,7 +56,7 @@ const Example = () => {
       search={{
         name: 'search',
         value: search,
-        onChangeSearch: (e: any) => setSearch(e.target.value)
+        onChangeSearch: (e: any) => setSearch(e.target.value),
         searchFields: ['name', 'email']
       }}
       rows={users}
